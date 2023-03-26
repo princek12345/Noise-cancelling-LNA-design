@@ -1,0 +1,543 @@
+Warning detected by hpeesofsim in MOSFET3 during circuit set up.
+    The well proximity effect is not applied as none of Sca, Scb, Scc, Sc is given and/or Sc not positive.
+TAHB transient MaxTimeStep was not explicitly set; value defaults
+to  1.667e-11, which gives 2x oversampling of the highest frequency.
+TAHB transient StopTime was not explicitly set; value defaults
+to  3.333e-08, which gives 100 cycles of the periodic solution.
+xxxxxxxxxx
+xxxxxx
+xxxxx
+xxx
+xxx
+xx
+xx
+xx
+xx
+xx
+xx
+xx
+
+t=1.667e-13    0%
+Steady state reached and TAHB conversion started at t= 3.984e-09
+t=4.334e-09  100%
+
+HB HB1[1] <MyLibrary1_lib:LNA_razavi_HBSimulation:schematic>   pin=(-20->5)
+    Number of tones:   1.
+    Number of frequencies:   6.
+    Number of time samples:  16.
+    Number of HB equations (problem size): 341.
+    Auto mode: off.
+    Convergence mode: Auto.
+    Linear solver: Krylov (GS_GMRES).
+    Preconditioner: DCP.
+    The general solver is used for HB Krylov preconditioning.
+
+** Read in solution from `LNA_razavi_HBSimulation.hbs'. **
+
+    pin=-20            0.00% 1/26
+------------------------------------------------------------------------------
+Newton solver:					Linear solver:
+Iter	KCL residual	Damp %	Sol update	Iters	Residual
+------------------------------------------------------------------------------
+0 	18.7261 mA  	100.0             
+1 	1.9762 mA   	100.0            	  5	8.935e-02   
+2 	636.413 uA  	100.0            	  4	3.488e-02   
+3 	61.5095 uA  	100.0            	  3	3.378e-02   
+4 	478.147 nA  	100.0            	  5	1.924e-03   
+5 	177.577 pA  	100.0            	  6	3.636e-04   
+6 	45.9653 fA  	100.0	9.75817 nV  	  6	4.001e-04   
+    pin=-19            4.00% 2/26
+0 	77.1712 uA  	100.0             
+        Newton iteration failed, damping activated.
+1 	74.7428 uA  	100.0            	  3	2.898e-02   
+2 	4.76922 uA  	100.0            	  3	3.535e-02   
+        Damping de-activated.
+3 	8.69342 nA  	100.0            	  6	2.044e-03   
+4 	4.7995 pA   	100.0            	  7	5.734e-04   
+5 	1.77114 fA  	100.0	232.848 pV  	  7	4.406e-04   
+
+    pin=-18            8.00% 3/26
+0 	86.5876 uA  	100.0             
+        Newton iteration failed, damping activated.
+1 	99.9399 uA  	100.0            	  3	4.659e-02   
+2 	4.16426 uA  	100.0            	  4	2.610e-02   
+        Damping de-activated.
+3 	10.1512 nA  	100.0            	  7	1.989e-03   
+4 	5.79628 pA  	100.0            	  7	8.369e-04   
+5 	3.7719 fA   	100.0	253.831 pV  	  8	5.105e-04   
+
+    pin=-17           12.00% 4/26
+0 	97.1528 uA  	100.0             
+        Newton iteration failed, damping activated.
+1 	137.469 uA  	100.0            	  3	6.752e-02   
+2 	7.60086 uA  	100.0            	  4	4.375e-02   
+        Damping de-activated.
+3 	12.5386 nA  	100.0            	  8	1.581e-03   
+4 	2.33312 pA  	100.0            	  9	2.131e-04   
+5 	1.46141 fA  	100.0	146.763 pV  	  9	5.422e-04   
+
+    pin=-16           16.00% 5/26
+0 	109.007 uA  	100.0             
+        Newton iteration failed, damping activated.
+1 	186.249 uA  	100.0            	  3	8.990e-02   
+2 	12.3738 uA  	100.0            	  4	6.528e-02   
+        Damping de-activated.
+3 	49.7426 nA  	100.0            	  8	3.473e-03   
+4 	46.3883 pA  	100.0            	  9	7.963e-04   
+5 	16.68 fA    	100.0	1.85238 nV  	 10	3.857e-04   
+
+    pin=-15           20.00% 6/26
+0 	122.308 uA  	100.0             
+        Newton iteration failed, damping activated.
+1 	103.385 uA  	100.0            	  4	4.501e-02   
+2 	4.59473 uA  	100.0            	  4	4.294e-02   
+        Damping de-activated.
+3 	30.4608 nA  	100.0            	  8	4.075e-03   
+4 	14.6028 pA  	100.0            	 11	5.982e-04   
+5 	6.87298 fA  	100.0	1.06352 nV  	 11	4.743e-04   
+
+    pin=-14           24.00% 7/26
+0 	137.232 uA  	100.0             
+        Newton iteration failed, damping activated.
+1 	122.16 uA   	100.0            	  4	5.934e-02   
+2 	6.98641 uA  	100.0            	  5	4.423e-02   
+        Damping de-activated.
+3 	25.3208 nA  	100.0            	  9	3.659e-03   
+4 	27.754 pA   	100.0            	 11	7.708e-04   
+5 	21.6478 fA  	100.0	1.02727 nV  	 11	9.412e-04   
+
+    pin=-13           28.00% 8/26
+0 	153.977 uA  	100.0             
+        Newton iteration failed, damping activated.
+1 	161.439 uA  	100.0            	  4	7.524e-02   
+2 	12.7632 uA  	100.0            	  5	6.607e-02   
+        Damping de-activated.
+3 	54.9575 nA  	100.0            	 10	5.129e-03   
+4 	46.5486 pA  	100.0            	 12	6.723e-04   
+5 	35.5027 fA  	100.0	2.6244 nV   	 13	6.122e-04   
+
+    pin=-12           32.00% 9/26
+0 	172.765 uA  	100.0             
+        Newton iteration failed, damping activated.
+1 	215.455 uA  	100.0            	  4	9.047e-02   
+2 	19.5812 uA  	100.0            	  5	8.880e-02   
+        Damping de-activated.
+3 	112.807 nA  	100.0            	 11	5.241e-03   
+4 	68.8647 pA  	100.0            	 13	5.012e-04   
+5 	35.3159 fA  	100.0	2.67812 nV  	 13	6.498e-04   
+
+    pin=-11           36.00% 10/26
+0 	193.845 uA  	100.0             
+        Newton iteration failed, damping activated.
+1 	199.724 uA  	100.0            	  5	7.485e-02   
+2 	13.2525 uA  	100.0            	  6	7.372e-02   
+        Damping de-activated.
+3 	66.003 nA   	100.0            	 13	2.686e-03   
+4 	32.6861 pA  	100.0            	 15	5.770e-04   
+5 	18.2509 fA  	100.0	1.47722 nV  	 15	5.174e-04   
+
+    pin=-10           40.00% 11/26
+0 	217.498 uA  	100.0             
+        Newton iteration failed, damping activated.
+1 	233.945 uA  	100.0            	  5	8.370e-02   
+2 	14.1945 uA  	100.0            	  7	6.254e-02   
+        Damping de-activated.
+3 	69.6053 nA  	100.0            	 13	3.441e-03   
+4 	15.0223 pA  	100.0            	 16	2.718e-04   
+5 	15.9845 fA  	100.0	598.968 pV  	 15	8.516e-04   
+
+    pin=-9            44.00% 12/26
+0 	244.037 uA  	100.0             
+        Newton iteration failed, damping activated.
+1 	258.004 uA  	100.0            	  5	8.807e-02   
+2 	19.9444 uA  	100.0            	  7	7.968e-02   
+        Damping de-activated.
+3 	131.592 nA  	100.0            	 14	3.627e-03   
+4 	28.261 pA   	100.0            	 17	1.911e-04   
+5 	24.43 fA    	100.0	1.24294 nV  	 17	7.528e-04   
+
+    pin=-8            48.00% 13/26
+0 	273.814 uA  	100.0             
+        Newton iteration failed, damping activated.
+1 	269.47 uA   	100.0            	  5	8.775e-02   
+2 	15.9899 uA  	100.0            	  8	7.758e-02   
+        Damping de-activated.
+3 	145.374 nA  	100.0            	 15	4.471e-03   
+4 	117.258 pA  	100.0            	 17	6.096e-04   
+5 	181.087 fA  	100.0	4.60893 nV  	 19	7.494e-04   
+
+    pin=-7            52.00% 14/26
+0 	307.224 uA  	100.0             
+        Newton iteration failed, damping activated.
+1 	265.987 uA  	100.0            	  5	8.294e-02   
+2 	16.7821 uA  	100.0            	  9	7.410e-02   
+        Damping de-activated.
+3 	112.934 nA  	100.0            	 17	3.250e-03   
+4 	69.1191 pA  	100.0            	 19	4.816e-04   
+5 	47.7428 fA  	100.0	4.48479 nV  	 20	7.141e-04   
+
+    pin=-6            56.00% 15/26
+0 	344.711 uA  	100.0             
+        Newton iteration failed, damping activated.
+1 	269.709 uA  	100.0            	  4	8.804e-02   
+2 	20.1605 uA  	100.0            	 10	7.451e-02   
+        Damping de-activated.
+3 	270.578 nA  	100.0            	 17	6.286e-03   
+4 	526.954 pA  	100.0            	 20	7.955e-04   
+5 	247.377 fA  	100.0            	 21	6.905e-04   
+6 	250.326 aA  	100.0	9.34396 pV  	 20	7.854e-04   
+
+    pin=-5            60.00% 16/26
+0 	386.772 uA  	100.0             
+        Newton iteration failed, damping activated.
+1 	282.29 uA   	100.0            	  3	8.644e-02   
+2 	16.4665 uA  	100.0            	 11	7.783e-02   
+        Damping de-activated.
+3 	340.579 nA  	100.0            	 19	3.669e-03   
+4 	640.972 pA  	100.0            	 22	9.122e-04   
+5 	440.912 fA  	100.0            	 24	9.484e-04   
+6 	422.672 aA  	100.0	35.4751 pV  	 24	4.944e-04   
+
+    pin=-4            64.00% 17/26
+0 	433.966 uA  	100.0             
+        Newton iteration failed, damping activated.
+1 	263.622 uA  	100.0            	  2	8.242e-02   
+2 	23.4441 uA  	100.0            	 11	7.712e-02   
+        Damping de-activated.
+3 	390.158 nA  	100.0            	 20	4.223e-03   
+4 	680.942 pA  	100.0            	 26	7.532e-04   
+5 	389.317 fA  	100.0            	 27	3.977e-04   
+6 	227.426 aA  	100.0	7.39866 pV  	 26	7.651e-04   
+
+    pin=-3            68.00% 18/26
+0 	486.918 uA  	100.0             
+        Newton iteration failed, damping activated.
+1 	220.221 uA  	100.0            	  2	6.463e-02   
+2 	15.2948 uA  	100.0            	 11	5.579e-02   
+        Damping de-activated.
+3 	498.538 nA  	100.0            	 24	3.148e-03   
+4 	1.71571 nA  	100.0            	 28	1.162e-03   
+5 	2.27545 pA  	100.0            	 29	8.724e-04   
+6 	1.40802 fA  	100.0	80.9158 pV  	 30	6.649e-04   
+
+    pin=-2            72.00% 19/26
+0 	546.331 uA  	100.0             
+        Newton iteration failed, damping activated.
+1 	178.686 uA  	100.0            	  2	5.283e-02   
+2 	14.5729 uA  	100.0            	 17	3.631e-02   
+        Damping de-activated.
+3 	618.873 nA  	100.0            	 25	2.597e-03   
+4 	1.18022 nA  	100.0            	 30	3.895e-04   
+5 	1.62157 pA  	100.0            	 32	8.275e-04   
+6 	1.29467 fA  	100.0	44.6216 pV  	 28	8.574e-04   
+
+    pin=-1            76.00% 20/26
+0 	612.993 uA  	100.0             
+1 	142.359 uA  	100.0            	  2	4.418e-02   
+2 	16.3905 uA  	100.0            	 19	4.092e-02   
+3 	267.873 nA  	100.0            	 29	7.366e-03   
+4 	1.18321 nA  	100.0            	 34	8.931e-04   
+5 	707.63 fA   	100.0            	 34	6.433e-04   
+6 	638.298 aA  	100.0	22.3655 pV  	 35	5.101e-04   
+
+    pin=0             80.00% 21/26
+0 	687.789 uA  	100.0             
+1 	128.191 uA  	100.0            	  2	3.663e-02   
+2 	16.0318 uA  	100.0            	 20	4.855e-02   
+3 	465.596 nA  	100.0            	 30	9.658e-03   
+4 	729.285 pA  	100.0            	 36	4.241e-04   
+5 	645.865 fA  	100.0            	 37	9.078e-04   
+6 	264.545 aA  	100.0	48.0042 pV  	 37	4.206e-04   
+
+    pin=1             84.00% 22/26
+0 	771.712 uA  	100.0             
+1 	113.926 uA  	100.0            	  2	3.023e-02   
+2 	12.4454 uA  	100.0            	 18	4.764e-02   
+3 	242.946 nA  	100.0            	 33	3.566e-03   
+4 	282.043 pA  	100.0            	 38	7.402e-04   
+5 	432.523 fA  	100.0            	 39	6.894e-04   
+6 	208.079 aA  	100.0	13.3624 pV  	 39	5.389e-04   
+
+    pin=2             88.00% 23/26
+0 	865.876 uA  	100.0             
+        Newton iteration failed, damping activated.
+1 	515.88 uA   	100.0            	  1	8.890e-02   
+2 	52.5078 uA  	100.0            	  8	7.208e-02   
+        Damping de-activated.
+3 	1.99545 uA  	100.0            	 34	4.407e-03   
+4 	10.8886 nA  	100.0            	 38	1.054e-03   
+5 	2.86224 pA  	100.0            	 41	3.537e-04   
+6 	2.09603 fA  	100.0	58.6613 pV  	 41	6.995e-04   
+
+    pin=3             92.00% 24/26
+0 	971.528 uA  	100.0             
+        Newton iteration failed, damping activated.
+1 	515.191 uA  	100.0            	  1	7.958e-02   
+2 	48.4913 uA  	100.0            	  8	7.188e-02   
+        Damping de-activated.
+3 	1.93817 uA  	100.0            	 30	5.533e-03   
+4 	4.39877 nA  	100.0            	 39	5.223e-04   
+5 	1.87362 pA  	100.0            	 42	1.805e-04   
+6 	316.522 aA  	100.0	84.9698 pV  	 42	2.265e-04   
+
+    pin=4             96.00% 25/26
+0 	1.09007 mA  	100.0             
+        Newton iteration failed, damping activated.
+1 	518.551 uA  	100.0            	  1	7.203e-02   
+2 	42.314 uA   	100.0            	  8	6.718e-02   
+        Damping de-activated.
+3 	2.65057 uA  	100.0            	 35	2.805e-03   
+4 	12.8452 nA  	100.0            	 39	1.199e-03   
+5 	6.39047 pA  	100.0            	 42	3.234e-04   
+6 	4.824 fA    	100.0	276.665 pV  	 42	8.674e-04   
+
+    pin=5            100.00% 26/26
+0 	1.22308 mA  	100.0             
+        Newton iteration failed, damping activated.
+1 	524.073 uA  	100.0            	  1	6.570e-02   
+2 	35.9393 uA  	100.0            	  8	6.105e-02   
+3 	4.20185 uA  	100.0            	 36	4.482e-03   
+        Damping de-activated.
+4 	29.8039 nA  	100.0            	 39	1.184e-03   
+5 	16.9876 pA  	100.0            	 43	2.948e-04   
+6 	6.12462 fA  	100.0	299.856 pV  	 42	8.046e-04   
+
+An HB truncation error may be present.
+o The HB truncation error is due to using a finite order 
+  (number of harmonics) in the representation of the
+  circuit signals.
+
+Waveform                Trunc error             Tolerance
+---------------------------------------------------------
+MOSFET2.d               2.406e-03       >       2.207e-06
+Vout                    2.403e-03       >       2.206e-06
+MOSFET2.s               1.615e-03       >       1.667e-06
+N__3                    1.584e-03       >       1.668e-06
+MOSFET2.sb              1.572e-03       >       1.668e-06
+
+o Number of waveforms violating the HB truncation error check:
+        22 out of 26 waveforms.
+o Estimated max HB truncation error: 2.406e-03 @ waveform MOSFET2.d .
+o The maximal HB truncation error estimate is greater than the 
+  achieved tolerance of 2.207e-06 for this waveform.
+o A time-domain plot of the N__3 waveform may show the error as 
+  Gibbs ripples.
+o To reduce the error, increase the order (number of harmonics) 
+  and re-simulate.
+
+HB HB2[1] <MyLibrary1_lib:LNA_razavi_HBSimulation:schematic>
+    Number of tones:   1.
+    Number of frequencies:   6.
+    Number of time samples:  16.
+    Number of HB equations (problem size): 341.
+    Auto mode: off.
+    Convergence mode: Fast.
+    Linear solver: Krylov (GS_GMRES).
+    Preconditioner: DCP.
+    The general solver is used for HB Krylov preconditioning.
+0 	11.2468 mA               
+1 	5.92286 mA              	  1	6.034e-02   
+2 	3.29998 mA              	  5	4.821e-02   
+3 	2.80372 mA              	  4	2.155e-02   
+4 	735.798 uA              	  2	1.059e-02   
+5 	19.4887 uA              	  2	2.155e-04   
+6 	18.5743 nA              	  1	3.920e-04   
+7 	16.2131 fA              	  1	3.806e-07   
+8 	86.6205 aA  	638.456 fV  	  1	4.377e-13   
+0 	86.6205 aA               
+1 	63.2875 aA  	1.31536 fV  	  1	1.364e-13   
+Numerical noise: 2.005750e-35 mW, -3.169772e+02 dBm
+Next attempt: 1.264911e-06
+0 	632.456 nA               
+1 	1.43348 nA              	  1	1.758e-13   
+2 	90.0466 fA              	  1	1.308e-04   
+3 	106.523 aA  	1.83867 pV  	  1	6.303e-05   
+Low level gain found: 5.300140e+00, 7.242874e+00 dB
+Success. Next attempt: 3.794733e-06
+0 	1.26491 uA               
+1 	11.9972 nA              	  1	6.046e-05   
+2 	2.27763 pA              	  1	3.921e-04   
+3 	529.181 aA  	43.7178 pV  	  1	1.891e-04   
+Compression = 3.030835e-06 dB, Gain = 7.242871e+00 dB
+Success. Next attempt: 9.486833e-06
+0 	2.84605 uA               
+1 	79.4906 nA              	  1	1.814e-04   
+2 	38.906 pA               	  1	9.771e-04   
+3 	21.5251 fA  	645.953 pV  	  1	4.734e-04   
+Compression = 2.095896e-05 dB, Gain = 7.242853e+00 dB
+Success. Next attempt: 2.371708e-05
+0 	7.11512 uA               
+1 	636.266 nA              	  1	4.533e-04   
+2 	742.411 pA              	  1	2.414e-03   
+3 	1.04404 pA              	  1	1.193e-03   
+4 	106.568 aA  	11.3698 pV  	  2	2.474e-06   
+Compression = 1.310577e-04 dB, Gain = 7.242743e+00 dB
+Success. Next attempt: 5.929271e-05
+0 	17.7878 uA               
+1 	3.47263 uA              	  1	1.133e-03   
+2 	6.83255 nA              	  1	6.121e-03   
+3 	33.5998 pA              	  1	3.013e-03   
+4 	725.657 aA  	452.357 pV  	  2	1.475e-05   
+Compression = 7.273573e-04 dB, Gain = 7.242146e+00 dB
+Success. Next attempt: 1.482318e-04
+0 	44.4695 uA               
+1 	10.8202 uA              	  1	2.850e-03   
+2 	61.9692 nA              	  1	1.589e-02   
+3 	7.62267 pA              	  2	8.763e-05   
+4 	1.9076 fA   	350.46 pV   	  2	1.470e-04   
+Compression = 4.194173e-03 dB, Gain = 7.238679e+00 dB
+Success. Next attempt: 3.705794e-04
+0 	111.174 uA               
+1 	43.8047 uA              	  1	7.330e-03   
+2 	909.005 nA              	  1	4.046e-02   
+3 	564.908 pA              	  2	5.722e-04   
+4 	25.6246 fA  	43.8482 nV  	  3	2.149e-05   
+Compression = 2.780514e-02 dB, Gain = 7.215069e+00 dB
+Success. Next attempt: 7.411588e-04
+0 	185.29 uA                
+1 	294.01 uA               	  1	2.189e-02   
+2 	2.17505 uA              	  2	6.778e-03   
+3 	2.19446 nA              	  3	1.078e-03   
+4 	92.2079 fA              	  4	2.343e-05   
+5 	106.431 aA  	4.33337 pV  	  3	5.332e-04   
+Compression = 1.722705e-01 dB, Gain = 7.070603e+00 dB
+Success. Next attempt: 1.111738e-03
+0 	185.29 uA                
+1 	787.339 uA              	  2	9.570e-03   
+2 	44.1374 uA              	  3	1.165e-02   
+3 	175.508 nA              	  4	2.839e-03   
+4 	77.9904 pA              	  5	5.784e-04   
+5 	8.39269 fA  	4.16754 nV  	  6	8.782e-05   
+Compression = 6.461781e-01 dB, Gain = 6.596696e+00 dB
+Success. Next attempt: 1.667607e-03
+0 	277.935 uA               
+1 	1.17752 mA              	  2	7.191e-02   
+2 	132.137 uA              	  3	5.734e-02   
+3 	1.55957 uA              	  5	6.532e-03   
+4 	727.547 pA              	  8	5.185e-04   
+5 	599.295 fA  	45.7784 nV  	  8	7.021e-04   
+Compression = 1.693165e+00 dB, Gain = 5.549709e+00 dB
+Bracket established
+Bracket: [1.111738e-03, 1.667607e-03]
+Success. Next attempt: 1.389673e-03
+0 	138.967 uA               
+1 	176.613 uA              	  3	7.643e-02   
+2 	4.91037 uA              	  3	2.753e-02   
+3 	26.7758 nA              	  5	3.810e-03   
+4 	17.411 pA               	  7	4.321e-04   
+5 	6.34685 fA  	836.431 pV  	  7	4.163e-04   
+Compression = 1.154268e+00 dB, Gain = 6.088606e+00 dB
+Bracket established
+Bracket: [1.111738e-03, 1.389673e-03]
+Success. Next attempt: 1.250706e-03
+0 	69.4836 uA               
+1 	62.3015 uA              	  3	4.307e-02   
+2 	1.28354 uA              	  3	2.105e-02   
+3 	3.4974 nA               	  5	2.108e-03   
+4 	2.21814 pA              	  6	4.643e-04   
+5 	847.704 aA  	100.957 pV  	  6	4.527e-04   
+Compression = 8.916925e-01 dB, Gain = 6.351181e+00 dB
+Bracket: [1.250706e-03, 1.389673e-03]
+Success. Next attempt: 1.320189e-03
+0 	34.7418 uA               
+1 	23.7197 uA              	  3	2.748e-02   
+2 	820.523 nA              	  3	3.334e-02   
+3 	1.21318 nA              	  5	2.292e-03   
+4 	715.738 fA              	  7	3.326e-04   
+5 	610.846 aA  	30.294 pV   	  6	6.874e-04   
+Compression = 1.021556e+00 dB, Gain = 6.221317e+00 dB
+Bracket established
+Bracket: [1.250706e-03, 1.320189e-03]
+Success. Next attempt: 1.285447e-03
+0 	17.3709 uA               
+1 	11.1286 uA              	  3	3.503e-02   
+2 	182.269 nA              	  3	2.969e-02   
+3 	541.159 pA              	  5	1.226e-03   
+4 	390.865 fA  	21.4433 nV  	  6	6.340e-04   
+Compression = 9.561854e-01 dB, Gain = 6.286688e+00 dB
+Bracket: [1.285447e-03, 1.320189e-03]
+Success. Next attempt: 1.302818e-03
+0 	8.68545 uA               
+1 	5.35794 uA              	  3	3.118e-02   
+2 	49.3674 nA              	  3	2.499e-02   
+3 	106.46 pA               	  6	8.668e-04   
+4 	89.2068 fA  	6.4158 nV   	  6	6.718e-04   
+Compression = 9.887720e-01 dB, Gain = 6.254102e+00 dB
+Bracket: [1.302818e-03, 1.320189e-03]
+Success. Next attempt: 1.311504e-03
+0 	4.34273 uA               
+1 	2.73591 uA              	  3	3.309e-02   
+2 	27.535 nA               	  3	2.317e-02   
+3 	53.0777 pA              	  6	9.525e-04   
+4 	29.8072 fA  	3.41674 nV  	  6	5.635e-04   
+Compression = 1.005141e+00 dB, Gain = 6.237733e+00 dB
+Bracket established
+Bracket: [1.302818e-03, 1.311504e-03]
+Success. Next attempt: 1.307161e-03
+0 	2.17136 uA               
+1 	1.36455 uA              	  3	3.406e-02   
+2 	19.6743 nA              	  3	2.852e-02   
+3 	77.6639 pA              	  5	2.574e-03   
+4 	21.8159 fA  	6.56888 nV  	  7	2.402e-04   
+Compression = 9.969504e-01 dB, Gain = 6.245923e+00 dB
+Bracket: [1.307161e-03, 1.311504e-03]
+Success. Next attempt: 1.309332e-03
+0 	1.08568 uA               
+1 	683.079 nA              	  3	3.357e-02   
+2 	8.17613 nA              	  3	2.579e-02   
+3 	16.5315 pA              	  6	1.013e-03   
+4 	20.668 fA   	1.05478 nV  	  6	8.822e-04   
+Compression = 1.001044e+00 dB, Gain = 6.241830e+00 dB
+Bracket established
+Bracket: [1.307161e-03, 1.309332e-03]
+Success. Next attempt: 1.308247e-03
+0 	542.841 nA               
+1 	341.332 nA              	  3	3.382e-02   
+2 	4.56684 nA              	  3	2.726e-02   
+3 	30.4049 pA              	  5	3.582e-03   
+4 	31.9835 fA  	1.77365 nV  	  6	9.928e-04   
+Compression = 9.989968e-01 dB, Gain = 6.243877e+00 dB
+Bracket: [1.308247e-03, 1.309332e-03]
+Success. Next attempt: 1.308790e-03
+0 	271.42 nA                
+1 	170.717 nA              	  3	3.370e-02   
+2 	2.17242 nA              	  3	2.654e-02   
+3 	20.2228 pA              	  5	4.312e-03   
+4 	12.5532 fA  	893.464 pV  	  6	7.210e-04   
+Compression = 1.000020e+00 dB, Gain = 6.242853e+00 dB
+Bracket established
+Bracket: [1.308247e-03, 1.308790e-03]
+Success. Next attempt: 1.308518e-03
+0 	135.71 nA                
+1 	85.3458 nA              	  3	3.376e-02   
+2 	1.115 nA                	  3	2.691e-02   
+3 	8.82062 pA              	  5	3.936e-03   
+4 	7.15136 fA  	446.231 pV  	  6	8.508e-04   
+Compression = 9.995086e-01 dB, Gain = 6.243365e+00 dB
+Bracket: [1.308518e-03, 1.308790e-03]
+Success. An HB truncation error may be present.
+o The HB truncation error is due to using a finite order 
+  (number of harmonics) in the representation of the
+  circuit signals.
+
+Waveform                Trunc error             Tolerance
+---------------------------------------------------------
+Vout                    9.169e-05       >       1.336e-06
+MOSFET2.d               9.142e-05       >       1.336e-06
+MOSFET2.s               8.714e-05       >       1.066e-06
+N__3                    8.602e-05       >       1.067e-06
+MOSFET2.sb              8.540e-05       >       1.067e-06
+
+o Number of waveforms violating the HB truncation error check:
+        17 out of 26 waveforms.
+o Estimated max HB truncation error: 9.169e-05 @ waveform Vout .
+o The maximal HB truncation error estimate is greater than the 
+  achieved tolerance of 1.336e-06 for this waveform.
+o A time-domain plot of the N__3 waveform may show the error as 
+  Gibbs ripples.
+o To reduce the error, increase the order (number of harmonics) 
+  and re-simulate.
+
+Resource usage:
+  Total stopwatch time     =     1.95 seconds.
+

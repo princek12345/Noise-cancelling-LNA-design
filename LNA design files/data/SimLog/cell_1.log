@@ -1,0 +1,11 @@
+Warning detected by hpeesofsim in topology check during circuit set up.
+    Number of nodes with only one device attached (topology corrected): 2
+
+
+DC DC1[1] <MyLibrary1_lib:cell_1:schematic>  
+.
+DC convergence achieved in 33 iterations.
+
+Resource usage:
+  Total stopwatch time     =     0.59 seconds.
+

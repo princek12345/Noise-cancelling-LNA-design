@@ -1,0 +1,17 @@
+Warning detected by hpeesofsim in MOSFET3 during circuit set up.
+    The well proximity effect is not applied as none of Sca, Scb, Scc, Sc is given and/or Sc not positive.
+
+SP SP1[1] <MyLibrary1_lib:CS_LNA_Sparam:schematic>   freq=(1 GHz->10 GHz)
+Warning detected by hpeesofsim during SP analysis `SP1'.
+    The simulation temperature (25.0 C) is not the same as the IEEE standard
+    noise temperature (290 K or 16.85 C) in the noise analysis `SP1'.
+    If the simulation temperature is not equal to the IEEE standard temperature,
+    then the loss and the noise figure will not agree for a passive circuit.
+    The `Temp' parameter on the Options item can be set to 16.85 C to
+    eliminate this warning message.
+
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+Resource usage:
+  Total stopwatch time     =     0.99 seconds.
+

@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dc_annotation_options>
+ <options cell="CS_LNA_DC_AC_simulations" library="MyLibrary1_lib" ToggleVoltage="false" ToggleCurrent="false" view="schematic"/>
+</dc_annotation_options>

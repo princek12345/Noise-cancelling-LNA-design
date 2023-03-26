@@ -1,0 +1,17 @@
+
+hpeesofsim (*) 510.shp Jul 22 2019, MINT version 5
+    (64-bit windows built: Mon Jul 22, 2019 22:53:59 +0000)
+
+Warning detected by hpeesofsim in MOSFET3 during circuit set up.
+    The well proximity effect is not applied as none of Sca, Scb, Scc, Sc is given and/or Sc not positive.
+
+AC AC1[1] <MyLibrary1_lib:CS_LNA_DC_AC_simulations:schematic>   freq=(5 GHz->6 GHz)
+
+
+DC DC1[1] <MyLibrary1_lib:CS_LNA_DC_AC_simulations:schematic>  
+.
+DC convergence achieved in 57 iterations.
+
+Resource usage:
+  Total stopwatch time     =     2.08 seconds.
+

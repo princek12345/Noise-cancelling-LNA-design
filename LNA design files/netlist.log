@@ -1,0 +1,40 @@
+; Top Design: "MyLibrary1_lib:CS_LNA_Sparam:schematic"
+; Netlisted using Hierarchy Policy: "Standard"
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="MyLibrary1_lib:CS_LNA_Sparam:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+
+pin=-10
+S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=yes SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 NoiseInputPort=1 NoiseOutputPort=2 \
+SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
+
+SweepPlan: SP1_stim Start=500 MHz Stop=1200 MHz Step=5 MHz 
+
+OutputPlan:SP1_Output \
+      Type="Output" \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2
+
+#load "python","LinearCollapse"
+Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
+Port:PORT1  Vin 0 Num=1  Z=50 Ohm  Freq[1]=900 MHz    P[1]=dbmtow(pin) Noise=yes Pac=polar(dbmtow(0),0) 
+"BSIM4M1":MOSFET4  N__9 N__2 N__12 N__12 Length=60e-9 Width=4e-05 Temp=27 Mode=1 Noise=yes 
+"BSIM4M1":MOSFET5  N__13 N__15 N__9 N__9 Length=60e-9 Width=4e-05 Temp=27 Mode=1 Noise=yes 
+"BSIM4M1":MOSFET6  N__6 N__6 0 0 Length=60e-9 Width=10e-6 Temp=27 Mode=1 Noise=yes 
+L:L4  N__18 N__2 L=8.334 nH tune{ 0.2 nH to 10 nH by 0.1 nH } R=5.89095 Ohm Noise=yes  
+L:L5  N__12 0 L=0.68 nH tune{ 0.2 nH to 5 nH by 0.1 nH } R=0.48066 Ohm Noise=yes  
+R:R8  N__2 N__6 R=10 kOhm Noise=yes 
+C:C8  0 N__6 C=1.0 pF 
+C:C9  0 N__18 C=50 fF 
+C:C10  N__4 N__13 C=50 fF 
+I_Source:SRC3  N__15 N__6 Type="I_DC" Idc=1.027 mA 
+V_Source:SRC4  N__15 0 Type="V_DC" Vdc=1.2 V SaveCurrent=1 
+C:C11  Vin N__18 C=1 pF 
+C:C12  N__15 N__13 C=2.63 pF tune{ 0.5 pF to 15 pF by 0.1 pF } 
+L:L6  N__15 N__13 L=11.6 nH tune{ 5 nH to 15 nH by 0.5 nH } R=8.34 Ohm Noise=yes  
+"BSIM4M1":MOSFET7  N__15 N__4 N__16 N__16 Length=60e-9 Width=4e-05 Temp=27 Mode=1 Noise=yes 
+R:R9  N__15 N__4 R=1 kOhm Noise=yes 
+R:R10  N__16 0 R=1 kOhm Noise=yes 
+Port:TermG2  N__16 0 Num=2 Z=50 Ohm Noise=yes 
+model BSIM4M1 BSIM4 NMOS=1 PMOS=0 Capmod=2 Diomod=2 Rdsmod=1 Trnqsmod=0 Acnqsmod=0 Mobmod=0 Rbodymod=1 Rgatemod=3 Permod=1 Geomod=0 Rgeomod=1 Fnoimod=1 Tnoimod=1 Igcmod=1 Igbmod=1 Paramchk=1 Nf=5 Binunit=1 Version=4.5 Toxe=2.6000E-09 Toxp=2.3910E-09 Toxm=2.6000E-09 Toxref=2.6000E-09 Epsrox=3.9000E+00 Cdsc=2.0710E-04 Cdscb=-8.0000E-03 Cdscd=4.0000E-03 Cit=9.4250E-04 Nfactor=-2.9800E-01 Xj=9.0000E-08 Vsat=1.0250E+05 At=5.1390E+04 A0=3.1140E+00 Ags=-5.1320E-01 A1=0 A2=1 Keta=-2.3330E-02 Ndep=2.0000E+17 Nsd=1.0000E+20 Phin=9.0620E-02 Ngate=1.0000E+21 K1=3.4860E-01 Kt1=-2.6910E-01 Kt1l=-7.6080E-09 Kt2=-4.6990E-02 K2=-2.3110E-02 K3=2.6000E+00 K3b=7.6230E+00 W0=7.6990E-07 Dvtp0=7.1200E-06 Dvtp1=1.4250E+00 Lpe0=-8.5440E-09 Lpeb=-5.9670E-08 Dvt0=9.0130E-01 Dvt1=1.1480E+00 Dvt2=6.0000E-02 Dvt0w=0 Dvt1w=5.3000E+06 Dvt2w=-3.2000E-02 Drout=5.0000E-01 Dsub=2.6660E-02 Vth0=2.8000E-01 Ua=-8.9310E-10 Ua1=1.0440E-09 Ub=1.9620E-18 Ub1=-1.3910E-18 Uc=3.5890E-11 Uc1=1.0930E-11 U0=2.9030E-02 Eu=1.6000E+00 Ute=-1.5530E+00 Voff=-1.6780E-01 Minv=-3.1470E-01 Voffl=-2.5000E-09 Tnom=2.5000E+01 Cgso=7.4080E-11 Cgdo=7.4080E-11 Cgbo=0 Xpart=0 Delta=1.0500E-02 Rsh=1.4000E+01 Rdsw=2.2000E+02 Rdswmin=7.5900E+01 Rsw=2.5900E+01 Rdw=2.5900E+01 Rdwmin=3.7950E+01 Rswmin=3.7950E+01 Prwg=2.0000E-01 Prwb=-2.5000E-02 Prt=-4.2440E+01 Eta0=1.0530E-04 Etab=-7.9980E-05 Pclm=1.4220E-01 Pdiblc1=4.9500E-08 Pdiblc2=6.9650E-03 Pdiblcb=0 Fprout=1.3000E+01 Pdits=1.0860E-01 Pditsl=0 Pditsd=1.2020E+00 Pscbe1=6.5350E+09 Pscbe2=1.1470E-04 Pvag=2.1100E+00 Jss=3.0360E-07 Jsws=9.4950E-14 Jswgs=0 Pbs=6.8680E-01 Njs=1.0470E+00 Xtis=1.4100E+00 Mjs=3.5700E-01 Pbsws=9.0000E-01 Mjsws=4.0000E-02 Pbswgs=0.75 Mjswgs=0.3024 Cjs=1.2000E-03 Cjsws=2.2000E-11 Cjswgs=4.000E-10 Vfbcv=-1.0000E+00 Vfb=-1.0000E+00 Tpb=1.5000E-03 Tcj=8.7150E-04 Tpbsw=1.0000E-04 Tcjsw=5.5000E-04 Tpbswg=1.0000E-04 Tcjswg=1.0000E-03 Acde=2.7910E-01 Moin=5.9 Noff=2.3470E+00 Voffcv=-8.6670E-02 Dmcg=1.0000E-07 Dmci=6.0000E-08 Xgw=9.9E-07 Xgl=1.4E-09 Rshg=8.84 Ngcon=2 Xrcrg1=2.8 Xrcrg2=3 Xw=0 Xl=-3.0000E-09 Lintnoi=-1.5730E-07 Lint=8.3350E-09 Ll=-4.5760E-16 Llc=-4.9240E-17 Lln=1 Lw=-4.4000E-16 Lwc=-2.8760E-15 Lwn=1 Lwl=2.8000E-23 Lwlc=7.9220E-23 Lmin=6.0000E-08 Lmax=1.0000E-06 Wr=1 Wint=1.9130E-09 Dwg=6.0000E-09 Dwb=1.5100E-09 Wl=-9.1310E-16 Wlc=-1.6760E-15 Wln=1 Ww=-1.3820E-15 Wwc=-3.0300E-15 Wwn=1 Wwl=8.5640E-23 Wwlc=1.7150E-22 Wmin=8.0000E-08 Wmax=1.0000E-05 B0=6.0000E-07 B1=8.7750E-03 Cgsl=6.9560E-11 Cgdl=6.9560E-11 Ckappas=2.5000E+00 Ckappad=2.5000E+00 Cf=10.20E-011 Clc=1.0000E-07 Cle=6.0000E-01 Dwc=1.8700E-08 Dlc=1.0770E-08 Dlcig=1.8000E-08 Alpha0=3.0000E-07 Alpha1=4.4400E+00 Beta0=1.5900E+01 Agidl=6.1590E-11 Bgidl=9.1670E+08 Cgidl=7.6640E+01 Egidl=2.0390E-01 Aigc=1.2070E-02 Bigc=2.3570E-03 Cigc=1.2070E-02 Aigsd=1.2520E-02 Bigsd=1.0500E-03 Cigsd=5.7120E-02 Aigbacc=1.2580E-02 Bigbacc=7.6060E-03 Cigbacc=6.2560E-01 Aigbinv=1.5300E-02 Bigbinv=4.8520E-03 Cigbinv=1.0000E-03 Nigc=2.4550E+00 Nigbinv=1.6000E+00 Nigbacc=1.5000E+01 Ntox=1 Eigbinv=1.1 Pigcd=2.3010E+00 Poxedge=1 Ijthsfwd=1.1780E-03 Ijthsrev=9.1670E-04 Xjbvs=1 Bvs=9.75 Lnfactor=2.1930E-01 Lvsat=4.8060E+02 La0=-8.2900E-01 Lags=9.0920E-01 Lketa=3.9220E-03 Lkt2=2.8000E-03 Lk2=-4.5560E-04 Lk3=3.0400E-01 Llpe0=1.6400E-09 Llpeb=1.7130E-09 Ldvt0=3.3120E-01 Lua1=-9.8000E-11 Lub=5.0610E-20 Lub1=2.6000E-20 Lu0=0 Lute=-4.2290E-02 Leta0=1.4650E-05 Lpdiblc2=0 Ldwg=-1.3000E-10 Lnoff=5.1000E-02 Lvoffcv=-4.6510E-03 Wvsat=0 Wa0=-1.0000E-01 Wags=7.3000E-03 Wketa=-5.0030E-03 Wkt1=-3.6000E-03 Wkt2=1.8000E-03 Wk3=-5.2400E+00 Wk3b=1.0650E+00 Wua1=-2.0000E-11 Wub1=-6.0000E-20 Wu0=-2.7840E-04 Wnoff=4.2000E-02 Wvoffcv=5.2860E-03 Pnfactor=-5.0000E-03 Pvsat=1.0140E+02 Pa0=8.4360E-02 Pags=2.8000E-02 Pketa=5.5300E-04 Pkt1=6.4000E-05 Pkt2=-1.0000E-04 Pk2=1.2550E-04 Pvtho=3.1800E-04 Pua=-5.7270E-13 Pub=0 Puc=-6.5730E-14 Pu0=-1.3050E-05 Peta0=-4.7000E-07 Petab=3.0000E-07 Ppclm=1.0000E-03 Pnoff=1.0000E-03 Saref=1.7600E-06 Sbref=1.7600E-06 Ku0=-8.0000E-08 Kvsat=9.9000E-01 Kvth0=7.0000E-09 Llodvth=8.2000E-01 Wlodvth=8.2000E-01 Lku0=9.0000E-08 Wku0=4.0000E-08 Pku0=8.0000E-15 Lkvth0=3.0000E-06 Wkvth0=3.0000E-06 Pkvth0=1.4800E-12 Stk2=2.2000E-10 Lodk2=1 Steta0=0 Noia=3.8580E+40 Noib=2.2480E+26 Noic=6.8800E+08 Ntnoi=1 Em=5.9170E+07 Ef=9.8040E-01 Ud=0 Up=8.22 Lp=1.0000E-08 Wpemod=1 Web=-8.6930E+04 Wec=5.9150E+04 Kvth0we=-7.0950E-06 K2we=-3.9410E-06 Ku0we=1.0000E-05 Scref=2.0000E-06 

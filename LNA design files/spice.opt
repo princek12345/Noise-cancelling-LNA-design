@@ -1,0 +1,8 @@
+ConnectionMethod = 1
+SpiceDialect = 3
+ElementReplacementTable
+IgnoreFirstLine = true
+SuppressNameMapping = false
+ComponentName = spice1
+NumberOfPins = 0
+DirectoryToStoreNetList = D:\mtech\RF IC\PROJECTS\MyWorkspace1_wrk

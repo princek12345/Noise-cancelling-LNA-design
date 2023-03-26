@@ -1,0 +1,28 @@
+Warning detected by hpeesofsim in MOSFET2 during circuit set up.
+    The well proximity effect is not applied as none of Sca, Scb, Scc, Sc is given and/or Sc not positive.
+Warning detected by hpeesofsim in MOSFET2 during circuit set up.
+    RS = 0 set to 1e-3 ohm as it is smaller than Minr (0.0001)
+Warning detected by hpeesofsim during circuit set up.
+    The source diffusion resistance in BSIM4 device `MOSFET2' is set to 1.0e-3 Ohms.
+Warning detected by hpeesofsim in MOSFET2 during circuit set up.
+    RD = 0 set to 1e-3 ohm as it is smaller than Minr (0.0001)
+Warning detected by hpeesofsim during circuit set up.
+    The drain diffusion resistance in BSIM4 device `MOSFET2' is set to 1.0e-3 Ohms.
+Warning detected by hpeesofsim during circuit set up.
+    The source diffusion resistance in BSIM4 device `MOSFET1' is set to 1.0e-3 Ohms.
+Warning detected by hpeesofsim during circuit set up.
+    The drain diffusion resistance in BSIM4 device `MOSFET1' is set to 1.0e-3 Ohms.
+
+DC DC1[1] <MyLibrary1_lib:VCO:schematic>  
+.
+DC convergence achieved in 81 iterations.
+
+
+TRAN Tran1[1] <MyLibrary1_lib:VCO:schematic>   time=(0 s->100 fs)
+Warning detected by hpeesofsim during TRAN analysis `Tran1'.
+    MaxTimeStep reduced to  1.000e-13 to resolve source bandwidth.
+
+
+Resource usage:
+  Total stopwatch time     =     1.37 seconds.
+

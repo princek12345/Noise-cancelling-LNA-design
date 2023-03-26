@@ -1,0 +1,13 @@
+Warning detected by hpeesofsim in MOSFET3 during circuit set up.
+    The well proximity effect is not applied as none of Sca, Scb, Scc, Sc is given and/or Sc not positive.
+
+AC AC1[1] <MyLibrary1_lib:CS_LNA:schematic>   freq=(5 GHz->6 GHz)
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+DC DC1[1] <MyLibrary1_lib:CS_LNA:schematic>  
+.
+DC convergence achieved in 57 iterations.
+
+Resource usage:
+  Total stopwatch time     =     1.29 seconds.
+
